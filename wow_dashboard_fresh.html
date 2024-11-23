@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WOW! Window Cleaning Analytics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 2rem;
+            margin: 0;
+        }
+        .chart-container {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .key-metrics ul {
+            list-style: none;
+            padding: 0;
+        }
+        .key-metrics li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="title-container">
+                <img src="SmallLogo.JPG" alt="WOW! Logo" class="logo">
+                <h1>Window Cleaning Analytics</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 chart-container">
+                <h2>Customer Location Map</h2>
+                <iframe src="customer_map.html" width="100%" height="500px" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 chart-container">
+                <h2>Total Sales by City</h2>
+                <img src="total_sales_by_city.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 chart-container">
+                <h2>Average Service Frequency by City</h2>
+                <img src="avg_times_serviced_by_city.png" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 chart-container key-metrics">
+                <h2>Key Metrics</h2>
+                <ul>
+                    <li>Total Customers: 154</li>
+                    <li>Total Revenue: $81674.5</li>
+                    <li>Average Service Frequency: 2.48 times</li>
+                    <li>Most Frequent Service Area:  Salt Lake City</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
